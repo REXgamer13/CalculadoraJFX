@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadorafx.Controller">
+    <children>
+        <TabPane prefHeight="400.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Operaciones">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <GridPane layoutX="14.0" layoutY="71.0" prefHeight="270.0" prefWidth="270.0">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Button fx:id="btC" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cleanScreen" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_boton_funciones.css" text="C">
+                                            <GridPane.margin>
+                                                <Insets />
+                                            </GridPane.margin>
+                                        </Button>
+                                        <Button fx:id="btDel" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#deleteValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_boton_funciones.css" text="Del" GridPane.columnIndex="1" />
+                                        <Button fx:id="btPorcentaje" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_operaciones.css" text="\%" GridPane.columnIndex="2" />
+                                        <Button fx:id="btDividir" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_operaciones.css" text="/" GridPane.columnIndex="3" />
+                                        <Button fx:id="bt7" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="7" GridPane.rowIndex="1" />
+                                        <Button fx:id="bt8" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                        <Button fx:id="bt9" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                        <Button fx:id="btMultiplicar" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_operaciones.css" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                        <Button fx:id="bt4" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="4" GridPane.rowIndex="2" />
+                                        <Button fx:id="bt5" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                        <Button fx:id="bt6" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                        <Button fx:id="btRestar" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_operaciones.css" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                        <Button fx:id="bt1" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="1" GridPane.rowIndex="3" />
+                                        <Button fx:id="bt2" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                        <Button fx:id="bt3" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                        <Button fx:id="btSumar" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addOperation" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_operaciones.css" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                        <Button fx:id="bt0" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="0" GridPane.rowIndex="4" />
+                                        <Button fx:id="btPunto" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addValue" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_botton_numero.css" text="." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                        <Button fx:id="btAns" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#getLastResult" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_boton_funciones.css" text="ANS" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                        <Button fx:id="btResultado" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#makeOperation" stylesheets="@../../../../java/com/example/calculadorafx/CSS/CSS/animacion_boton_funciones.css" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                    </children>
+                                </GridPane>
+                                <TextField fx:id="textfieldResult" disable="true" layoutX="11.0" layoutY="8.0" prefHeight="30.0" prefWidth="275.0">
+                                    <font>
+                                        <Font name="Arial Black" size="24.0" />
+                                    </font>
+                                </TextField>
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Historial">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <TextArea fx:id="tfHistorial" disable="true" layoutX="14.0" layoutY="14.0" prefHeight="342.0" prefWidth="274.0" />
+                            </children></AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

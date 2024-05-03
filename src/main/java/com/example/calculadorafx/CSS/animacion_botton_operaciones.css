@@ -1,0 +1,45 @@
+.button{
+    background-color: #70fffa;
+    -fx-background-color: #26f8ff,linear-gradient(#ffffff, #3dfaf7);
+        
+}
+/* mouse encima */
+.button:hover{
+    background-color: tomato;
+    -fx-background-color:
+        #000000,
+        linear-gradient(#fefcfa, #06f3ff),
+        linear-gradient(#eaf6fd 0%, #b5fff8 49%, #87fff7 50%, #02f2ff 100%);
+
+    
+    -fx-text-fill: rgb(34, 0, 255);
+
+}
+/* boton precionado */
+.button:pressed {
+    background-color: #ffffff;
+    -fx-background-color:
+        #5af9ff,
+        linear-gradient(#b3faf4, #00e1ff),
+        linear-gradient(#f2f2f2 0%, #ebebeb 49%, #73b6f5 50%, #03e2f7 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    padding: auto;
+    -fx-padding:center;
+    -fx-text-fill: rgb(0, 4, 255);
+    font-size: xx-large;
+    -fx-font-size: 20px;
+}
+/* mouse seleccionadno*/
+.button:focus{
+    background-color: #12fffb;
+    -fx-background-color:
+        #ff0000,
+        linear-gradient(#b1ae00, #f0fb76),
+        linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+
+    -fx-text-fill: rgb(0, 0, 0);
+
+}

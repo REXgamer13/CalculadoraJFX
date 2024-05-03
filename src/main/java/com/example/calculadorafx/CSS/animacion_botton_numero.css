@@ -1,0 +1,46 @@
+.button{
+    background-color: #8b8b8b;
+    -fx-background-color: #848484,linear-gradient(#fcfcfc, #a09e9e),linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #9c9c9c 100%);
+        
+}
+/* mouse encima */
+.button:hover{
+    background-color: tomato;
+    -fx-background-color:
+        #000000,
+        linear-gradient(#fafdfe, #E8F5FC),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    
+    -fx-text-fill: rgb(13, 0, 255);
+
+}
+/* boton precionado */
+.button:pressed {
+    background-color: #a7d9f5;
+    -fx-background-color:
+        #73ff00,
+        linear-gradient(#009DB1, #009DA1),
+        linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+    padding: auto;
+    -fx-padding:center;
+    -fx-text-fill: black;
+    font-size: xx-large;
+    -fx-font-size: 20px;
+}
+/* mouse seleccionadno*/
+.button:focus{
+    background-color: #a7d9f5;
+    -fx-background-color:
+        #005AB1,
+        linear-gradient(#009DB1, #009DA1),
+        linear-gradient(#f2f2f2 0%, #ebebeb 49%, #dddddd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-background-radius: 3,2,1;
+
+    -fx-text-fill: black;
+
+}
